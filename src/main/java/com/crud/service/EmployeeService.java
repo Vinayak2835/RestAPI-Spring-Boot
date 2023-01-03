@@ -20,7 +20,7 @@ public class EmployeeService {
 		if (employee.getPassword().contains("VINAY")) {
 			employee.setPassword(employee.getPassword());
 		} else {
-			throw new WrongpasswordFormatexception("Password should begins with:" + employee.getPassword());
+			throw new WrongpasswordFormatexception("Password should begins with:" + "VINAY");
 		}
 		System.out.println(employee);
 		return this.empRepository.save(employee);
