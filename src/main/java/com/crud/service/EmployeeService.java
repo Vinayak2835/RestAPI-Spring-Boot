@@ -32,7 +32,7 @@ public class EmployeeService {
 	}
 
 	public Employee updateEmployee(int id, Employee emp) {
-
+        //Optional class use
 		Employee employee = this.empRepository.findById(id).get();
 		employee.setEmpId(emp.getEmpId());
 		employee.setName(emp.getName());
